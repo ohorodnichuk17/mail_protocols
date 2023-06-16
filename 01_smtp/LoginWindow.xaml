@@ -1,0 +1,49 @@
+﻿<Window x:Class="_01_smtp.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_01_smtp"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0"
+               Margin="10"
+               Content="Login to your mail account" 
+               FontFamily="Montserrat"
+               FontWeight="Bold"
+               FontSize="25"/>
+
+        <StackPanel Grid.Row="1"
+                    Margin="10">
+            <Label Content="Mail address: " 
+                   FontFamily="Montserrat"
+                   FontWeight="Medium"
+                   FontSize="20"/>
+            <TextBox Margin="0,5,0,0"
+                     Name="mailTxtBox"
+                     Height="30"
+                     VerticalContentAlignment="Center"/>
+            <Label Content="Password: " 
+                   FontFamily="Montserrat"
+                   FontWeight="Medium"
+                   FontSize="20"/>
+            <TextBox Margin="0,5,0,0"
+                     Name="passTxtBox"
+                     Height="30"
+                     VerticalContentAlignment="Center"/>
+        </StackPanel>
+        <Button Grid.Row="2"
+                Click="Button_Click"    
+                Margin="10,10,10,100"
+                Width="60" Height="20"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Center"
+                Content="Login"/>
+    </Grid>
+</Window>
